@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import Tooltip from '@material-ui/core/Tooltip';
-import Hidden from '@material-ui/core/Hidden';
+import { BrowserView, MobileView } from 'react-device-detect';
 
 const styles = theme => ({
   appBar: {
@@ -33,16 +33,18 @@ const Header = (props) => {
   return (
     <AppBar position="static" color="default" className={classes.appBar}>
       <Toolbar>
-        <Hidden xsDown>
-          <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
-            Doni Setiawan
-          </Typography>
-        </Hidden>
-        <Hidden smUp>
-          <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
-            DS
-          </Typography>
-        </Hidden>
+        <div className={classes.toolbarTitle}>
+          <BrowserView>
+            <Typography variant="h6" color="inherit" noWrap>
+              Doni Setiawan
+            </Typography>
+          </BrowserView>
+          <MobileView>
+            <Typography variant="h6" color="inherit" noWrap>
+              DS
+            </Typography>
+          </MobileView>
+        </div>
         <Tooltip title="Twitter: @doni_g6s" placement="bottom-end">
           <IconButton aria-label="Twitter" className={classes.icon} href="https://twitter.com/doni_g6s" target="_blank">
             <FontAwesomeIcon icon={faTwitter} size="xs" />

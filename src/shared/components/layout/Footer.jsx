@@ -27,13 +27,13 @@ function Footer(props) {
       <Grid container spacing={0} justify="center">
         <Grid item sm={6} xs={12}>
           <Typography variant="h5" className={classes.footerText} gutterBottom>
-            <Tooltip title="Android App onProgress" placement="top">
+            <Tooltip disableHoverListener title="Android App onProgress" placement="top">
               <IconButton aria-label="Android">
                 <FontAwesomeIcon icon={faGooglePlay} size="sm" />
               </IconButton>
             </Tooltip>
-            <Tooltip title="IOS App onProgress" placement="top">
-              <IconButton aria-label="IOS">
+            <Tooltip disableHoverListener title="iOS App onProgress" placement="top">
+              <IconButton aria-label="iOS">
                 <FontAwesomeIcon icon={faAppStoreIos} size="sm" />
               </IconButton>
             </Tooltip>
