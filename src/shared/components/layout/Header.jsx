@@ -8,8 +8,10 @@ import IconButton from '@material-ui/core/IconButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import Tooltip from '@material-ui/core/Tooltip';
 import { BrowserView, MobileView } from 'react-device-detect';
+import { Tooltip } from 'react-tippy';
+
+import 'react-tippy/dist/tippy.css';
 
 const styles = theme => ({
   appBar: {
@@ -45,27 +47,27 @@ const Header = (props) => {
             </Typography>
           </MobileView>
         </div>
-        <Tooltip title="Twitter: @doni_g6s" placement="bottom-end">
+        <Tooltip title="Twitter: @doni_g6s" placement="bottom" trigger="mouseenter">
           <IconButton aria-label="Twitter" className={classes.icon} href="https://twitter.com/doni_g6s" target="_blank">
             <FontAwesomeIcon icon={faTwitter} size="xs" />
           </IconButton>
         </Tooltip>
-        <Tooltip title="Github: doniisetiiawan" placement="bottom">
+        <Tooltip title="Github: doniisetiiawan" placement="bottom" trigger="mouseenter">
           <IconButton aria-label="Github" className={classes.icon} href="https://github.com/doniisetiiawan" target="_blank">
             <FontAwesomeIcon icon={faGithub} size="xs" />
           </IconButton>
         </Tooltip>
-        <Tooltip title="Resume" placement="bottom">
+        <Tooltip title="Resume" placement="bottom" trigger="mouseenter">
           <IconButton aria-label="Resume" className={classes.icon}>
             <FontAwesomeIcon icon={faFile} size="xs" />
           </IconButton>
         </Tooltip>
-        <Tooltip title="LinkedIn" placement="bottom">
+        <Tooltip title="LinkedIn" placement="bottom" trigger="mouseenter">
           <IconButton aria-label="LinkedIn" className={classes.icon}>
             <FontAwesomeIcon icon={faLinkedin} size="xs" />
           </IconButton>
         </Tooltip>
-        <Tooltip title="Email: donisetiawan.050@gmail.com" placement="bottom">
+        <Tooltip title="Email: donisetiawan.050@gmail.com" placement="bottom" trigger="mouseenter">
           <IconButton aria-label="Email" className={classes.icon} href="mailto:donisetiawan.050@gmail.com">
             <FontAwesomeIcon icon={faEnvelope} size="xs" />
           </IconButton>
