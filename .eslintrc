@@ -1,0 +1,12 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "globals": {
+    "document": true
+  },
+  "rules": {
+    "react/forbid-prop-types": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/no-unescaped-entities": "off"
+  }
+}
