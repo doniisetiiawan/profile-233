@@ -7444,7 +7444,7 @@ pnp-webpack-plugin@1.1.0:
   resolved "https://registry.yarnpkg.com/pnp-webpack-plugin/-/pnp-webpack-plugin-1.1.0.tgz#947a96d1db94bb5a1fc014d83b581e428699ac8c"
   integrity sha512-CPCdcFxx7fEcDMWTDjXe2Wypt4JuMt4q5Q2UrpTcyBBkLiCIyPEh/mCGmUWIcNkKGyXwQ9Y2wVhlKm6ketiBNQ==
 
-popper.js@^1.14.1:
+popper.js@^1.11.1, popper.js@^1.14.1:
   version "1.14.6"
   resolved "http://registry.npm.taobao.org/popper.js/download/popper.js-1.14.6.tgz#ab20dd4edf9288b8b3b6531c47c361107b60b4b0"
   integrity sha1-qyDdTt+SiLiztlMcR8NhEHtgtLA=
@@ -8487,6 +8487,13 @@ react-side-effect@^1.1.0:
   dependencies:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
+
+react-tippy@^1.2.3:
+  version "1.2.3"
+  resolved "http://registry.npm.taobao.org/react-tippy/download/react-tippy-1.2.3.tgz#8aef183ec4986ca7c5c556465013d95196fecfd8"
+  integrity sha1-iu8YPsSYbKfFxVZGUBPZUZb+z9g=
+  dependencies:
+    popper.js "^1.11.1"
 
 react-transition-group@^2.2.1:
   version "2.5.3"
