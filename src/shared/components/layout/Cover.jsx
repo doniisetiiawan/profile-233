@@ -41,7 +41,7 @@ const Cover = (props) => {
           <FontAwesomeIcon icon={faStar} size="xs" /> Software Engineer <FontAwesomeIcon icon={faStar} size="xs" />
         </Typography>
         <Typography className={classes.text} variant="h6" align="center">
-          <FontAwesomeIcon icon={faStar} size="xs" /> Ex-Laravel supporter and now focus at React <FontAwesomeIcon icon={faStar} size="xs" />
+          Ex-Laravel supporter and now focus at React
         </Typography>
       </div>
     </div>
