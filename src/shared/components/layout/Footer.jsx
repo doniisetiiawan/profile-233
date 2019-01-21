@@ -5,7 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAppStoreIos, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
+import { faApple, faGithub, faAndroid } from '@fortawesome/free-brands-svg-icons';
 import { faCopyright, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { Tooltip } from 'react-tippy';
 
@@ -31,12 +31,12 @@ function Footer(props) {
           <Typography variant="h5" className={classes.footerText} gutterBottom>
             <Tooltip title="Android App onProgress" position="top" trigger="mouseenter">
               <IconButton aria-label="Android">
-                <FontAwesomeIcon icon={faGooglePlay} size="sm" />
+                <FontAwesomeIcon icon={faAndroid} size="sm" />
               </IconButton>
             </Tooltip>
             <Tooltip title="iOS App onProgress" position="top" trigger="mouseenter">
               <IconButton aria-label="iOS">
-                <FontAwesomeIcon icon={faAppStoreIos} size="sm" />
+                <FontAwesomeIcon icon={faApple} size="sm" />
               </IconButton>
             </Tooltip>
           </Typography>
