@@ -44,7 +44,6 @@ const App = (props) => {
       <CssBaseline />
 
       <Helmet>
-        <title>Doni Setiawan</title>
         <meta property="og:title" content="Doni Setiawan" />
         <meta property="twitter:title" content="Doni Setiawan" />
         <meta name="title" content="Doni Setiawan" />
