@@ -8,7 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faFile } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { BrowserView, MobileView } from 'react-device-detect';
+import { isMobile } from 'react-device-detect';
 import { Tooltip } from 'react-tippy';
 
 import 'react-tippy/dist/tippy.css';
@@ -36,16 +36,9 @@ const Header = (props) => {
     <AppBar position="static" color="default" className={classes.appBar}>
       <Toolbar>
         <div className={classes.toolbarTitle}>
-          <BrowserView>
-            <Typography variant="h6" color="inherit" noWrap>
-              Doni Setiawan
-            </Typography>
-          </BrowserView>
-          <MobileView>
-            <Typography variant="h6" color="inherit" noWrap>
-              DS
-            </Typography>
-          </MobileView>
+          <Typography variant="h6" color="inherit" noWrap>
+            {isMobile ? 'DS' : 'Doni Setiawan'}
+          </Typography>
         </div>
         <Tooltip title="Twitter: @doni_g6s" placement="bottom" trigger="mouseenter">
           <IconButton aria-label="Twitter" className={classes.icon} href="https://twitter.com/doni_g6s" target="_blank">
