@@ -9,7 +9,7 @@ const styles = theme => ({
   heroUnit: {
     background: theme.palette.primary.dark,
     opacity: 0.7,
-    minHeight: 'calc(100vh - 202px)',
+    minHeight: 'calc(100vh - 206px)',
   },
   heroContent: {
     maxWidth: 700,
